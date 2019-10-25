@@ -12,7 +12,7 @@
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker
-            .register('./a.js', { scope: '/pwa/' })
+            .register('./a.js', { scope: '/pwa' })
             .then(function(registration) {
               // 注册成功
               console.log(
