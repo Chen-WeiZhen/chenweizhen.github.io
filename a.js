@@ -11,3 +11,7 @@ self.addEventListener('activate', function (e) {
   // 激活的状态，这里就做一做老的缓存的清理工作
   console.log('actived')
 });
+// 缓存请求和返回（这是个简单的缓存优先的例子）
+self.addEventListener('fetch', function (e) {
+  console.log('fetch')
+})
